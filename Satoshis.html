@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Nashi Finance] | Conversor Satoshi</title>
+    <link rel="icon" type="image/x-icon" href="images/favicon.ico">
+    <link rel="stylesheet" href="styles/style_satoshis.css">
+    <script src="https://kit.fontawesome.com/090ca49637.js" crossorigin="anonymous"></script>
+</head>
+<body>
+    <header>
+    <h1> <a href="index.html"><img class="logotipo" src="images/nashifinance.png"></a></h1>
+    <nav>
+        <ul>
+            <li><a href="index.html">Início</a></li>
+            <li class="dropdown">
+            <a href="javascript:void(0)" class="dropbtn">Aplicativos</a>    
+                <div class="dropdown-content">
+                    <a href="Satoshis.html">Conversor de Satoshis</a>                    
+                    <a href="BTC Fees.html">BTC Fees</a>
+                    <a href="BTC Checker.html">BTC Checker</a>
+                    <a href="ETH Checker.html">ETH Checker</a>
+                    <a href="BNB Checker.html">BNB Checker</a>                    
+                    <a href="Conversor.html">Conversor de Moedas</a>
+                    <a href="QR Code.html">Gerador de QR Code</a>                    
+                </div>
+            <li><a href="Carteiras.html">Carteiras</a></li>
+            <li><a href="Segurança.html">Segurança</a></li>                                   
+            <li><a href="Exchanges.html">Exchanges</a></li>
+            <li><a href="Explorers.html">Explorers</a></li>
+            <li><a href="GasFees.html">Gas/Fees</a></li>
+            <li><a href="Análises.html">Análises</a></li>
+            <li><a href="Market Cap.html">Market Cap</a></li>
+            <li><a href="DeFi.html">DeFi</a></li>
+            <li><a href="Portfolio.html">Portfolio</a></li>
+            <li><a href="Serviços.html">Serviços</a></li>
+            <li><a href="Meupass.html">Meupass</a></li>
+        </ul>
+    </nav>
+    </header>
+
+
+    <main>
+  <div class="main-container">      
+  <section class="container">
+  <h1>Conversor <img class="satoshi" src="images/Satoshi regular elipse.png"> Satoshis</h1>
+  
+  <div class="satoshi-A">
+    <label for="satoshiInput1">Satoshi:</label>
+    <input type="number" id="satoshiInput1" placeholder="Quantidade de satoshi">
+    <button onclick="converter()">Valor em BRL</button>
+  </div><!--satoshi-A-->  
+  <div id="resultado"></div>
+
+  <div class="satoshi-A">
+    <label for="satoshiInput2">Satoshi:</label>
+    <input type="number" id="satoshiInput2" placeholder="Quantidade de satoshi">
+    <button onclick="converter2()">Valor em USD</button>
+  </div><!--satoshi-A-->  
+  <div id="resultado2"></div>
+  </section>
+  </div><!--main-container-->
+  
+  <script src="https://cdn.jsdelivr.net/npm/axios/dist/axios.min.js"></script>
+  <script src="scripts/script_satoshi.js"></script>
+    </main>
+</body>
+
+<footer>
+
+<h4>─ Nashi Finance 2025 ─</h4>
+
+</footer>
+</html>

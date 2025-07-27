@@ -1,0 +1,80 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Nashi Finance | Gerador de QR Code</title>
+    <link rel="icon" type="image/x-icon" href="images/favicon.ico">
+    <link rel="stylesheet" href="styles/style_qrcode.css">
+</head>
+<body>
+    <header>
+
+    <h1> <a href="index.html"><img class="logotipo" src="images/nashifinance.png"></a></h1>
+    <nav>
+        <ul>
+            <li><a href="index.html">Início</a></li>
+            <li class="dropdown">
+            <a href="javascript:void(0)" class="dropbtn">Aplicativos</a>    
+                <div class="dropdown-content">
+                    <a href="Satoshis.html">Conversor de Satoshis</a>                    
+                    <a href="BTC Fees.html">BTC Fees</a>
+                    <a href="BTC Checker.html">BTC Checker</a>
+                    <a href="ETH Checker.html">ETH Checker</a>
+                    <a href="BNB Checker.html">BNB Checker</a>                    
+                    <a href="Conversor.html">Conversor de Moedas</a>
+                    <a href="QR Code.html">Gerador de QR Code</a>                    
+                </div>
+            <li><a href="Carteiras.html">Carteiras</a></li>
+            <li><a href="Segurança.html">Segurança</a></li>                                   
+            <li><a href="Exchanges.html">Exchanges</a></li>
+            <li><a href="Explorers.html">Explorers</a></li>
+            <li><a href="GasFees.html">Gas/Fees</a></li>
+            <li><a href="Análises.html">Análises</a></li>
+            <li><a href="Market Cap.html">Market Cap</a></li>
+            <li><a href="DeFi.html">DeFi</a></li>
+            <li><a href="Portfolio.html">Portfolio</a></li>
+            <li><a href="Serviços.html">Serviços</a></li>
+            <li><a href="Meupass.html">Meupass</a></li>
+        </ul>
+    </nav>
+    </header>
+
+    <main>
+        <h2>[ Gerador de QR Code Personalizado ]</h2>
+        <div class="main-container">
+	
+        
+        <div class="container">
+        
+        <input type="text" id="qrText" placeholder="Digite o texto ou URL aqui">
+        
+        <label for="size">Tamanho (px):</label>
+        <input type="number" id="size" value="200" min="100" max="500">
+        
+        <label for="qrColor">Cor do QR Code:</label>
+        <input type="color" id="qrColor" value="#000000">
+        
+        <label for="bgColor">Cor de Fundo:</label>
+        <input type="color" id="bgColor" value="#ffffff">
+        
+        <button id="generateBtn">Gerar QR Code</button>
+        
+        <div id="qrcode"></div>
+
+        </div>
+
+        </div><!--main-container-->
+    
+
+    <script src="https://cdn.jsdelivr.net/npm/qrcode@1.4.4/build/qrcode.min.js"></script>
+    <script src="scripts/script_qrcode.js"></script>
+    </main>
+</body>
+<footer>
+
+<h4>─ Nashi Finance 2025 ─</h4>
+
+</footer>
+</html>
+</html>
