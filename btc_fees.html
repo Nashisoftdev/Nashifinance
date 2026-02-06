@@ -3,31 +3,13 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Nashi Finance] | BTC Fees</title>
-    <meta http-equiv="refresh" content="10" />
+    <title>Nashi Finance | Gas/Fees</title>
     <link rel="icon" type="image/x-icon" href="images/favicon.ico">
     <link rel="stylesheet" href="styles/style_01.css">
-
-    <script src="https://mempool.space/mempool.js"></script>
-    <script>
-      const init = async () => {
-        const { bitcoin: { fees } } = mempoolJS({
-          hostname: 'mempool.space'
-        });
-
-        const feesRecommended = await fees.getFeesRecommended();
-
-        document.getElementById("taxa-baixa").textContent = feesRecommended.hourFee + ' sat/vB';
-        document.getElementById("taxa-media").textContent = feesRecommended.halfHourFee + ' sat/vB';
-        document.getElementById("taxa-alta").textContent = feesRecommended.fastestFee + ' sat/vB';
-      };
-
-      init();
-    </script>
 </head>
-
 <body>
     <header>
+
     <h1> <a href="index.html"><img class="logotipo" src="images/nashifinance.png"></a></h1>
     <nav>
         <ul>
@@ -42,7 +24,7 @@
                     <a href="bnb_checker.html">BNB Checker</a>                    
                     <a href="conversor.html">Conversor de Moedas</a>
                     <a href="qr_code.html">Gerador de QR Code</a>
-                    <a href="bitcoin_retirement_calculator.html" target="_blank">Bitcoin Retirement Calculator</a>
+                    <a href="bitcoin_retirement_calculator.html" target="_blank">Bitcoin Retirement Calculator</a>                    
                 </div>
             <li><a href="carteiras.html">Carteiras</a></li>
             <li><a href="seguranca.html">Segurança</a></li>                                   
@@ -54,33 +36,43 @@
             <li><a href="defi.html">DeFi</a></li>
             <li><a href="portfolio.html">Portfolio</a></li>
             <li><a href="servicos.html">Serviços</a></li>
-            <li><a href="noticias.html">Notícias</a></li>            
+            <li><a href="noticias.html">Notícias</a></li>
+            <li><a href="meupass.html">Meupass</a></li>
         </ul>
-    </nav>
-    </header> 
+    </nav>    
+
+    </header>
 
 
-    <main>
+<main>
         
-        <h2>[ Taxas de Transação Bitcoin ]</h2>
-    <div id="taxas-container">
-        <div class="taxa-prioridade" id="baixa-prioridade">
-            <h5>Baixa Prioridade</h5>
-            <p id="taxa-baixa"></p>
+<h2>[ Gas | Fees ]</h2>
+     
+<div class="itens">
+        <div class="center-image">
+            <a href="https://bitref.com/" target="_blank">
+                <p><img class="scaled" src="images/gas_fees/bitref.png" alt="Logotipo BitRef" style="width: 200px;">                
+            </a>    
         </div>
-        <div class="taxa-prioridade" id="media-prioridade">
-            <h5>Média Prioridade</h5>
-            <p id="taxa-media"></p>
+
+        <div class="center-image">
+            <a href="https://bitcoinfees.net/" target="_blank">
+                <p><img class="scaled" src="images/gas_fees/bitcoinfees.png" alt="Logotipo BitcoinFees" style="width: 200px;">                
+            </a>    
         </div>
-        <div class="taxa-prioridade" id="alta-prioridade">
-            <h5>Alta Prioridade</h5>
-            <p id="taxa-alta"></p>
+
+        <div class="center-image">
+            <a href="https://www.gasfees.io/" target="_blank">
+                <p><img class="scaled" src="images/gas_fees/gasfees.png" alt="Logotipo GasFees" style="width: 200px;">                
+            </a>    
         </div>
-    </div>
-    
-    </main>
+ </div>       
+
+</main>
 </body>
-<footer style="margin-top: 45%;">
+
+
+<footer>
 
 <h4>─ Nashi Finance 2025 ─</h4>
 
